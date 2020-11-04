@@ -24,13 +24,10 @@ fun main() {
             deffer.await()
             println(deffer.getCompleted())
         }
-
     }
 
     // Coroutineが終わるまで待つ
     while (!job.isCompleted) {
         Thread.sleep(100)
-
     }
-
 }

@@ -4,7 +4,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import kotlin.random.Random
 
 val stories = arrayOf(
     "赤ずきんちゃんの４行ストーリ",
@@ -22,13 +21,10 @@ fun main() {
 
             println(stories[count])
         }
-
     }
 
     // Coroutineが終わるまで待つ
     while (!job.isCompleted) {
         Thread.sleep(100)
-
     }
-
 }

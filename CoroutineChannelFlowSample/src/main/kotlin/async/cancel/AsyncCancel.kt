@@ -32,7 +32,5 @@ fun main() {
     // Coroutineが終わるまで待つ
     while (!job.isCompleted || !job.isCancelled) {
         Thread.sleep(100)
-
     }
-
 }
